@@ -1,9 +1,6 @@
 # Set the security protocol
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-# Bypass the execution policy
-PowerShell.exe -ExecutionPolicy Bypass
-
 # Install the Get-WindowsAutopilotInfo script
 Install-Script -name Get-WindowsAutopilotInfo -Force
 
